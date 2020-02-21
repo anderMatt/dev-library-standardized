@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.devtechnology.devlibrary"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "DevLibrary",
+    "packageName": "com.devtechnology.devlibrary",
+    "packageFolder": "com/devtechnology/devlibrary",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OGRmYWIwYjJjMjhlZDhkOTI1MTc4NmRhZjBhNWMwY2IzYzk5YTk4OTk5NDc3Yjg3NmNhNWU5MmY1NTJlYmNhOTEzYjRjNzRiNjkyYzQzMzcwMDBlYTkwYTliNTA4MGZjOWYxZTE4YTBhMTk2NjEyMDkzMTdjNTU2OTMzM2MxMzU=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1582311745385,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
