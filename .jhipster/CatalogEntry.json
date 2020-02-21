@@ -1,0 +1,29 @@
+{
+    "name": "CatalogEntry",
+    "fields": [
+        {
+            "fieldName": "inventoryCount",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "book",
+            "otherEntityRelationshipName": "catalogEntry",
+            "relationshipName": "book",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200221191000",
+    "entityTableName": "catalog_entry",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

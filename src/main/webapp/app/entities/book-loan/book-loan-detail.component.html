@@ -1,0 +1,48 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="bookLoan">
+            <h2><span>Book Loan</span> {{ bookLoan.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Check Out Date Time</span></dt>
+                <dd>
+                    <span>{{ bookLoan.checkOutDateTime }}</span>
+                </dd>
+                <dt><span>Due Date Time</span></dt>
+                <dd>
+                    <span>{{ bookLoan.dueDateTime }}</span>
+                </dd>
+                <dt><span>Returned Date Time</span></dt>
+                <dd>
+                    <span>{{ bookLoan.returnedDateTime }}</span>
+                </dd>
+                <dt><span>Book</span></dt>
+                <dd>
+                    <div *ngIf="bookLoan.book">
+                        <a [routerLink]="['/book', bookLoan.book?.id, 'view']">{{ bookLoan.book?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span>Borrower</span></dt>
+                <dd>
+                    {{ bookLoan.borrower?.id }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/book-loan', bookLoan.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

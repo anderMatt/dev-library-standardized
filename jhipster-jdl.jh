@@ -1,0 +1,27 @@
+entity Book {
+    isbn String,
+    title String,
+    description String,
+    author String,
+    genre String,
+    imageUrl String
+}
+
+entity CatalogEntry {
+    inventoryCount Long
+}
+
+entity BookLoan {
+    checkOutDateTime Instant,
+    dueDateTime Instant,
+    returnedDateTime Instant
+}
+
+relationship OneToOne {
+    CatalogEntry{book} to Book
+    BookLoan{book} to Book
+    BookLoan{borrower} to User
+}
+
+
+

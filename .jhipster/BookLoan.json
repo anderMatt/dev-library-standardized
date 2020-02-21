@@ -1,0 +1,45 @@
+{
+    "name": "BookLoan",
+    "fields": [
+        {
+            "fieldName": "checkOutDateTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "dueDateTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "returnedDateTime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "book",
+            "otherEntityRelationshipName": "bookLoan",
+            "relationshipName": "book",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "bookLoan",
+            "relationshipName": "borrower",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200221191100",
+    "entityTableName": "book_loan",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
